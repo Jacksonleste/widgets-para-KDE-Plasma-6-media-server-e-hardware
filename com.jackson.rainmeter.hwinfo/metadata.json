@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jackson"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Monitor de CPU, GPU e Memória RAM em tempo real com detecção automática de hardware",
+        "Icon": "utilities-system-monitor",
+        "Id": "com.jackson.rainmeter.hwinfo",
+        "License": "MIT",
+        "Name": "Monitor de Hardware",
+        "Version": "4.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

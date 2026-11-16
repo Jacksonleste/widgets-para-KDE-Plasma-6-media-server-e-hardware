@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jackson"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Card de monitoramento do Jellyfin com contagem de bibliotecas e reprodução ativa em tempo real",
+        "Icon": "media-playback-start",
+        "Id": "com.jackson.rainmeter.jellyfin",
+        "License": "MIT",
+        "Name": "Rainmeter - Jellyfin",
+        "Version": "2.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

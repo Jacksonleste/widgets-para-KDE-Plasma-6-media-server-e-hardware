@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Jackson"
+            }
+        ],
+        "Category": "System Information",
+        "Description": "Card de monitoramento do Radarr com filmes faltando, fila de downloads e total na biblioteca",
+        "Icon": "video-x-generic",
+        "Id": "com.jackson.rainmeter.radarr",
+        "License": "MIT",
+        "Name": "Radarr",
+        "Version": "2.0"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

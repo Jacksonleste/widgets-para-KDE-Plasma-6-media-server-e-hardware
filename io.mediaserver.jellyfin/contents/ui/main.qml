@@ -4,6 +4,7 @@ import QtQuick.Layouts
 import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.plasmoid
 import org.kde.plasma.plasma5support as P5Support
+import org.kde.taskmanager as TaskManager
 
 PlasmoidItem {
     id: root
@@ -113,6 +114,10 @@ PlasmoidItem {
         }
 
         // 1. Se o cliente já estiver aberto no sistema, traz a janela para o primeiro plano via protocolo nativo do KDE/Wayland
+        if (focusExistingClientWindow()) {
+            return;
+        }
+
         // 2. Caso não esteja aberto, inicia o cliente configurado
         var customCmd = root.clientCommand;
         if (root.clickActionMode === 1 && customCmd !== "") {

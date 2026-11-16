@@ -46,8 +46,24 @@ Uma coleção coesa de widgets nativos (Plasmoids) com visual **Glassmorphism** 
 
 ## 🚀 Como Instalar
 
-### Opção 1: Instalador Gráfico Interativo (Recomendado)
-No terminal, dentro da pasta do projeto, execute:
+### Opção 1: Direto pelo KDE Plasma via Releases (Recomendado — Mais Fácil)
+Você não precisa usar o terminal nem instalar fontes manualmente (a fonte **Fira Sans** já vai embutida dentro de cada arquivo `.plasmoid`):
+
+1. Acesse a aba [**Releases**](../../releases) deste repositório e baixe apenas os arquivos **`.plasmoid`** dos widgets que desejar usar:
+   * `io.mediaserver.jellyfin.plasmoid`
+   * `io.mediaserver.radarr.plasmoid`
+   * `io.mediaserver.sonarr.plasmoid`
+   * `io.mediaserver.prowlarr.plasmoid`
+   * `io.mediaserver.qbittorrent.plasmoid`
+   * `io.system.hwmonitor.plasmoid`
+2. Clique com o **botão direito** na Área de Trabalho do KDE Plasma e selecione **"Adicionar ou gerenciar widgets..."**.
+3. No canto superior direito do painel de widgets, clique em **"Obter novos..."** → **"Instalar widget a partir de arquivo local..."**.
+4. Selecione o(s) arquivo(s) `.plasmoid` baixado(s) e pronto!
+
+---
+
+### Opção 2: Instalador Gráfico em Lote (`install.sh`)
+Caso tenha baixado o pacote completo (`kde-media-hardware-widgets-bundle.zip`) ou clonado o repositório e queira marcar quais widgets instalar ou remover por uma janela interativa:
 
 ```bash
 chmod +x install.sh uninstall.sh reload.sh
@@ -55,10 +71,12 @@ chmod +x install.sh uninstall.sh reload.sh
 ```
 
 Uma janela nativa do KDE (`kdialog`) será aberta permitindo:
-* **Escolher exatamente quais widgets** você deseja instalar (marcando ou desmarcando na lista).
-* Instalar automaticamente a família de fontes **Fira Sans** para fidelidade visual.
+* **Escolher exatamente quais widgets** você deseja instalar ou desinstalar (marcando ou desmarcando na lista).
+* Instalar ou limpar tudo sem deixar arquivos órfãos.
 
-### Opção 2: Atalhos Rápidos via Terminal (CLI)
+---
+
+### Opção 3: Atalhos Rápidos via Terminal (CLI)
 
 | Comando | O que faz |
 | :--- | :--- |
@@ -67,6 +85,7 @@ Uma janela nativa do KDE (`kdialog`) será aberta permitindo:
 | `./install.sh --dev` | Instala todos os 6 widgets usando **Links Simbólicos** (ideal para quem quer editar o código-fonte nesta pasta) |
 | `./install.sh --cli` | Força o menu interativo em modo texto no terminal |
 | `./reload.sh` | Limpa o cache de sensores (`/dev/shm`), limpa o cache QML do KDE e reinicia o `plasmashell` para aplicar alterações na hora |
+| `./build-release.sh` | Gera os pacotes `.plasmoid` individuais (sem chaves/senhas pessoais) na pasta `release/` |
 
 ---
 
@@ -81,7 +100,12 @@ Uma janela nativa do KDE (`kdialog`) será aberta permitindo:
 
 ## 🗑️ Como Desinstalar (Sem Arquivos Remanescentes)
 
-O desinstalador foi projetado para fazer uma **limpeza completa**: ele remove automaticamente os widgets ativos da sua Área de Trabalho (evitando caixas de erro no KDE), apaga os pacotes em `~/.local/share/plasma/plasmoids/`, remove os arquivos temporários em `/dev/shm`, limpa o cache QML e remove as fontes instaladas caso nenhum widget do pacote permaneça no sistema.
+### Pelo próprio KDE Plasma (se instalou via arquivo `.plasmoid`):
+1. Clique com o **botão direito** no widget na Área de Trabalho e selecione **"Remover..."**.
+2. Abra **"Adicionar ou gerenciar widgets..."**, passe o mouse sobre o widget na lista e clique no ícone de lixeira (**Desinstalar widget**).
+
+### Pelo Desinstalador Automático (`uninstall.sh` / `install.sh`):
+O script desinstalador faz uma **limpeza completa**: remove automaticamente os widgets ativos da sua Área de Trabalho (evitando caixas de erro no KDE), apaga os pacotes em `~/.local/share/plasma/plasmoids/`, remove os arquivos temporários em `/dev/shm`, limpa o cache QML e remove as fontes extras caso nenhum widget do pacote permaneça no sistema.
 
 * **Para desinstalar tudo imediatamente em 1 comando:**
   ```bash

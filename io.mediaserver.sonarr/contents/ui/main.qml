@@ -30,6 +30,11 @@ PlasmoidItem {
     Plasmoid.backgroundHints: PlasmaCore.Types.NoBackground
     preferredRepresentation: fullRepresentation
 
+    FontLoader { source: Qt.resolvedUrl("../fonts/FiraSans-Regular.otf") }
+    FontLoader { source: Qt.resolvedUrl("../fonts/FiraSans-Medium.otf") }
+    FontLoader { source: Qt.resolvedUrl("../fonts/FiraSans-SemiBold.otf") }
+    FontLoader { source: Qt.resolvedUrl("../fonts/FiraSans-Bold.otf") }
+
     implicitWidth: cardW
     implicitHeight: cardH
     Layout.preferredWidth: cardW

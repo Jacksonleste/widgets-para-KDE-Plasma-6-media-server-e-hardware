@@ -6,7 +6,13 @@ Uma coleção coesa de widgets nativos (Plasmoids) com visual **Glassmorphism** 
 
 ## 📸 Screenshots
 
-<!-- Adicione os prints na pasta screenshots/ -->
+| Jellyfin | Radarr | Sonarr |
+| :---: | :---: | :---: |
+| ![Jellyfin](screenshots/jellyfin.png) | ![Radarr](screenshots/radarr.png) | ![Sonarr](screenshots/sonarr.png) |
+
+| Prowlarr | qBittorrent | Monitor de Hardware |
+| :---: | :---: | :---: |
+| ![Prowlarr](screenshots/prowlarr.png) | ![qBittorrent](screenshots/qbittorrent.png) | ![Monitor de Hardware](screenshots/hwmonitor.png) |
 
 ---
 

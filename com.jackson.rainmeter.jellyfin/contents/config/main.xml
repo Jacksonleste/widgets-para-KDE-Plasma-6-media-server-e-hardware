@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="apiUrl" type="String">
+            <default>http://localhost:8096</default>
+        </entry>
+        <entry name="clickActionMode" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="clientCommand" type="String">
+            <default>jellium-desktop</default>
+        </entry>
+        <entry name="clickUrl" type="String">
+            <default></default>
+        </entry>
+        <entry name="apiToken" type="String">
+            <default>27ef4f5ef56d436a876bcf81c07679c9</default>
+        </entry>
+        <entry name="titleText" type="String">
+            <default>Jellyfin</default>
+        </entry>
+        <entry name="subtitleText" type="String">
+            <default>Servidor de Streaming</default>
+        </entry>
+        <entry name="sessionsIntervalSec" type="Int">
+            <default>2</default>
+        </entry>
+        <entry name="countsIntervalSec" type="Int">
+            <default>20</default>
+        </entry>
+    </group>
+</kcfg>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="radarrUrl" type="String">
+            <default>http://localhost:7878</default>
+        </entry>
+        <entry name="clickUrl" type="String">
+            <default></default>
+        </entry>
+        <entry name="radarrKey" type="String">
+            <default>e1ac13309c724d828909a0ced27a7279</default>
+        </entry>
+        <entry name="jellyfinUrl" type="String">
+            <default>http://localhost:8096</default>
+        </entry>
+        <entry name="jellyfinToken" type="String">
+            <default>27ef4f5ef56d436a876bcf81c07679c9</default>
+        </entry>
+        <entry name="titleText" type="String">
+            <default>Radarr</default>
+        </entry>
+        <entry name="subtitleText" type="String">
+            <default>Gerenciamento de Filmes</default>
+        </entry>
+        <entry name="refreshIntervalSec" type="Int">
+            <default>30</default>
+        </entry>
+    </group>
+</kcfg>

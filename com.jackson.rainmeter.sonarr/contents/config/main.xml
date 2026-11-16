@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0 http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <kcfgfile name=""/>
+    <group name="General">
+        <entry name="sonarrUrl" type="String">
+            <default>http://localhost:8989</default>
+        </entry>
+        <entry name="clickUrl" type="String">
+            <default></default>
+        </entry>
+        <entry name="sonarrKey" type="String">
+            <default>687c885b6ff848399114459a1982d79b</default>
+        </entry>
+        <entry name="jellyfinUrl" type="String">
+            <default>http://localhost:8096</default>
+        </entry>
+        <entry name="jellyfinToken" type="String">
+            <default>27ef4f5ef56d436a876bcf81c07679c9</default>
+        </entry>
+        <entry name="titleText" type="String">
+            <default>Sonarr</default>
+        </entry>
+        <entry name="subtitleText" type="String">
+            <default>Gerenciamento de Séries</default>
+        </entry>
+        <entry name="refreshIntervalSec" type="Int">
+            <default>30</default>
+        </entry>
+    </group>
+</kcfg>

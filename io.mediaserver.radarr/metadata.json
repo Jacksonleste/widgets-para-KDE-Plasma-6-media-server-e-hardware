@@ -9,7 +9,7 @@
         "Category": "System Information",
         "Description": "Card de monitoramento do Radarr com filmes faltando, fila de downloads e total na biblioteca",
         "Icon": "video-x-generic",
-        "Id": "com.jackson.rainmeter.radarr",
+        "Id": "io.mediaserver.radarr",
         "License": "MIT",
         "Name": "Radarr",
         "Version": "2.0"

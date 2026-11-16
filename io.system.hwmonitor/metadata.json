@@ -9,7 +9,7 @@
         "Category": "System Information",
         "Description": "Monitor de CPU, GPU e Memória RAM em tempo real com detecção automática de hardware",
         "Icon": "utilities-system-monitor",
-        "Id": "com.jackson.rainmeter.hwinfo",
+        "Id": "io.system.hwmonitor",
         "License": "MIT",
         "Name": "Monitor de Hardware",
         "Version": "4.0"

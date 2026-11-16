@@ -7,11 +7,11 @@
             }
         ],
         "Category": "System Information",
-        "Description": "Card de monitoramento do Sonarr com episódios desejados, fila de downloads e total de séries",
-        "Icon": "video-television",
-        "Id": "com.jackson.rainmeter.sonarr",
+        "Description": "Card de monitoramento do Jellyfin com contagem de bibliotecas e reprodução ativa em tempo real",
+        "Icon": "media-playback-start",
+        "Id": "io.mediaserver.jellyfin",
         "License": "MIT",
-        "Name": "Sonarr",
+        "Name": "Jellyfin",
         "Version": "2.0"
     },
     "X-Plasma-API-Minimum-Version": "6.0"
